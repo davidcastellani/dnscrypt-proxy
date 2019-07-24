@@ -55,7 +55,7 @@ ipv4_servers = true
 ipv6_servers = false
 
 # Use servers implementing the DNSCrypt protocol
-dnscrypt_servers = false
+dnscrypt_servers = true
 
 # Use servers implementing the DNS-over-HTTPS protocol
 doh_servers = true
@@ -80,7 +80,7 @@ require_nofilter = false
 ## (dnscrypt-proxy will always encrypt everything even using UDP), and can
 ## only increase latency.
 
-force_tcp = true
+force_tcp = false
 
 
 ## SOCKS proxy
@@ -180,7 +180,7 @@ cert_refresh_delay = 240
 ## People in China may need to use 114.114.114.114:53 here.
 ## Other popular options include 8.8.8.8 and 1.1.1.1.
 
-fallback_resolver = '1.1.1.1:53'
+fallback_resolver = '9.9.9.9:53'
 
 
 ## Never let dnscrypt-proxy try to use the system DNS settings;
